@@ -1,0 +1,1 @@
+PORT= 9526 npm run start
