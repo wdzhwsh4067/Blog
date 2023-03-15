@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[Braydon Coyer]]></title>
+        <description><![CDATA[Braydon Coyer]]></description>
+        <link>https://braydoncoyer.dev</link>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Wed, 15 Mar 2023 05:57:33 GMT</lastBuildDate>
+        <atom:link href="https://braydoncoyer.dev/rss.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Hhhhhhere’s an idea…]]></title>
+            <description><![CDATA[Perhaps write about something…?]]></description>
+            <link>https://braydoncoyer.dev/blog/hhhhhhere&apos;s-an-idea...</link>
+            <guid isPermaLink="true">https://braydoncoyer.dev/blog/hhhhhhere&apos;s-an-idea...</guid>
+            <pubDate>Thu, 16 Mar 2023 16:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Mmmmmmmmodern JavaScript in Legacy Applications]]></title>
+            <description><![CDATA[A look and discussion about using JavaScript in old codebases.]]></description>
+            <link>https://braydoncoyer.dev/blog/mmmmmmmmodern-javascript-in-legacy-applications</link>
+            <guid isPermaLink="true">https://braydoncoyer.dev/blog/mmmmmmmmodern-javascript-in-legacy-applications</guid>
+            <pubDate>Tue, 14 Mar 2023 05:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[NLP第一次作业By王少煌··]]></title>
+            <description><![CDATA[NLP第一次作业By王少煌]]></description>
+            <link>https://braydoncoyer.dev/blog/nlpby</link>
+            <guid isPermaLink="true">https://braydoncoyer.dev/blog/nlpby</guid>
+            <pubDate>Tue, 14 Mar 2023 05:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[自然语言处理作业]]></title>
+            <description><![CDATA[33333]]></description>
+            <link>https://braydoncoyer.dev/blog/</link>
+            <guid isPermaLink="true">https://braydoncoyer.dev/blog/</guid>
+            <pubDate>Tue, 14 Mar 2023 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[动态跟踪生产线项目开发进度报告]]></title>
+            <description><![CDATA[进度表]]></description>
+            <link>https://braydoncoyer.dev/blog/</link>
+            <guid isPermaLink="true">https://braydoncoyer.dev/blog/</guid>
+            <pubDate>Mon, 13 Mar 2023 16:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[121313131321]]></title>
+            <description><![CDATA[The combination of Next.js and the Notion API provide a powerful solution to blogging!]]></description>
+            <link>https://braydoncoyer.dev/blog/121313131321</link>
+            <guid isPermaLink="true">https://braydoncoyer.dev/blog/121313131321</guid>
+            <pubDate>Sat, 25 Jun 2022 13:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Hello, Worldhhhhhh!]]></title>
+            <description><![CDATA[The combination of Next.js and the Notion API provide a powerful solution to blogging!]]></description>
+            <link>https://braydoncoyer.dev/blog/hello-worldhhhhhh!</link>
+            <guid isPermaLink="true">https://braydoncoyer.dev/blog/hello-worldhhhhhh!</guid>
+            <pubDate>Sat, 25 Jun 2022 13:00:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>
