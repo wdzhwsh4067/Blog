@@ -37,3 +37,12 @@ Create a `.env` file similar to `.env.example` and include the appropriate keys.
 ## Notion Article Template
 
 Duplicate [the following Notion database](https://www.notion.so/0d3e00c6bbe54231897b9fcbc7747f78?v=4d7f0006d9a144b5bd8b9251f2ec39cd), grab the database ID and add it to the environment variables in the `.env` file.
+
+## Docker run
+
+
+跳过jutpter的环境变量？
+①创建镜像：
+docker build -f ./Dockerfile -t myblog .
+②启动容器：
+docker run -itd -p 9526:9526 --name myblog myblog

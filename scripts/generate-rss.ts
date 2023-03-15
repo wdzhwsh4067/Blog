@@ -9,7 +9,7 @@ export async function generateRssFeed() {
   const articles = await convertToArticleList(resp);
 
   const feed = new RSS({
-    title: 'Braydon Coyer',
+    title: 'Dana Wang',
     site_url: 'https://braydoncoyer.dev',
     feed_url: 'https://braydoncoyer.dev/rss.xml'
   });

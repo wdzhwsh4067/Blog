@@ -35,7 +35,8 @@ module.exports = {
       'res.craft.do',
       'res.cloudinary.com',
       'robohash.org',
-      'iad.microlink.io' // link preview
+      'iad.microlink.io', // link preview
+      's2.loli.net',// 一个好用的图床 sm.ms
     ]
   }
 };

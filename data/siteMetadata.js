@@ -1,14 +1,13 @@
 const siteMetadata = {
-  title: 'Braydon Coyer – full-stack engineer, writer, creative developer.',
-  author: 'Braydon Coyer',
+  title: 'Dana Wang – full-stack engineer, writer, creative developer.',
+  author: 'Dana Wang',
   headerTitle: "Braydon's Portfolio",
   description:
     "I'm Braydon. I'm a senior front end developer, blogger and designer. Welcome to my corner of the internet. I'm glad you're here!",
   language: 'en-us',
   siteUrl: 'https://braydoncoyer.dev',
   siteRepo: 'https://github.com/braydoncoyer/braydoncoyer.dev',
-  avatarImage:
-    'https://res.cloudinary.com/braydoncoyer/image/upload/v1636553710/avatar.jpg',
+  avatarImage: 'https://s2.loli.net/2023/03/16/apJv2yNUiHYZ91x.png',
   socialBanner:
     'https://res.cloudinary.com/braydoncoyer/image/upload/v1638884997/default-social-image.png',
   email: 'mailto:braydon@coyer.net',

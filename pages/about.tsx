@@ -20,7 +20,7 @@ import { useRouter } from 'next/router';
 export default function About({ recentArticles, workTimeline }) {
   const { push } = useRouter();
   return (
-    <Container title="About Me - Braydon Coyer">
+    <Container title="About Me - Dana Wang">
       <h1>
         <span className="block text-base font-semibold tracking-wide text-center text-indigo-500 uppercase dark:text-teal-400">
           About me
@@ -47,9 +47,9 @@ export default function About({ recentArticles, workTimeline }) {
         <div className="hidden md:block md:float-left">
           <Image
             className="md:mr-8"
-            src="https://res.cloudinary.com/braydoncoyer/image/upload/v1670716662/family_photo_scs57f.jpg"
+            src="https://s2.loli.net/2023/03/16/apJv2yNUiHYZ91x.png"
             placeholder="blur"
-            blurDataURL="https://res.cloudinary.com/braydoncoyer/image/upload/v1670716662/family_photo_scs57f.jpg"
+            blurDataURL="https://s2.loli.net/2023/03/16/apJv2yNUiHYZ91x.png"
             width={340}
             height={448}
             alt={'article cover'}
@@ -89,10 +89,10 @@ export default function About({ recentArticles, workTimeline }) {
       </div>
       <hr className="my-16 w-full border-none text-center h-10 before:content-['∿∿∿'] before:text-[#D1D5DB] before:text-2xl"></hr>
       <div className="flex justify-center">
-        <Ad />
+        {/* <Ad /> */}
       </div>
       <div className="mt-12 space-y-6">
-        <h2 className="m-0 text-gray-900 dark:text-white">Work experience</h2>
+        <h2 className="m-0 text-gray-900 dark:text-white">Work and Educational Experience</h2>
         <p>Here's a brief rundown of my most recent experiences.</p>
         {workTimeline ? (
           <TimelineList>
