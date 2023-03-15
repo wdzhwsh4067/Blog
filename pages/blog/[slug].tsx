@@ -248,7 +248,7 @@ const ArticlePage = ({
       day: 'numeric'
     }
   );
-
+  // 标注，与阅读量相关
   useEffect(() => {
     fetch(`/api/views/${slug}`, {
       method: 'POST'
@@ -379,6 +379,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
       });
     }
   });
+  console.log('=================================');
+  console.log(paths);
 
   return {
     paths,
@@ -395,7 +397,8 @@ export const getStaticProps: GetStaticProps = async ({ params: { slug } }) => {
   let sponsoredArticleUrl = null;
   let summary = null;
 
-  const profilePicture = await getTwitterProfilePicture();
+  // 修改：通过推特api获取账户内的图片
+  // const profilePicture = await getTwitterProfilePicture();
 
   const notion = new Client({
     auth: process.env.NOTION_SECRET
@@ -404,16 +407,30 @@ export const getStaticProps: GetStaticProps = async ({ params: { slug } }) => {
   const data: any = await getAllArticles(process.env.BLOG_DATABASE_ID);
 
   const page: any = getArticlePage(data, slug);
+  // if (page.properties.Name.title[0].plain_text) {
+  //   articleTitle = page.properties.Name.title[0].plain_text;
+  //   publishedDate = page.properties.Published.date.start;
+  //   lastEditedAt = page.properties.LastEdited.last_edited_time;
+  //   sponsoredArticleUrl = page.properties.canonicalUrl?.url;
+  //   summary = page.properties.Summary?.rich_text[0]?.plain_text;
+  //   coverImage =
+  //     page.properties?.coverImage?.files[0]?.file?.url ||
+  //     page.properties.coverImage?.files[0]?.external?.url ||
+  //     'https://via.placeholder.com/600x400.png';
+  // }
 
-  articleTitle = page.properties.Name.title[0].plain_text;
-  publishedDate = page.properties.Published.date.start;
-  lastEditedAt = page.properties.LastEdited.last_edited_time;
-  sponsoredArticleUrl = page.properties.canonicalUrl?.url;
-  summary = page.properties.Summary?.rich_text[0]?.plain_text;
-  coverImage =
-    page.properties?.coverImage?.files[0]?.file?.url ||
-    page.properties.coverImage?.files[0]?.external?.url ||
-    'https://via.placeholder.com/600x400.png';
+    articleTitle = page.properties.Name.title[0].plain_text;
+    publishedDate = page.properties.Published.date.start;
+    lastEditedAt = page.properties.LastEdited.last_edited_time;
+    sponsoredArticleUrl = page.properties.canonicalUrl?.url;
+    summary = page.properties.Summary?.rich_text[0]?.plain_text;
+    coverImage =
+      page.properties?.coverImage?.files[0]?.file?.url ||
+      page.properties.coverImage?.files[0]?.external?.url ||
+      'https://via.placeholder.com/600x400.png';
+
+
+
 
   const moreArticles: any = await getMoreArticlesToSuggest(
     process.env.BLOG_DATABASE_ID,
@@ -434,7 +451,7 @@ export const getStaticProps: GetStaticProps = async ({ params: { slug } }) => {
 
     content = [...content, ...blocks.results];
   }
-
+  // 修改：profilePicture，返回的这个参数，通过上面的getStaticProps方法类，渲染成页面
   return {
     props: {
       content,
@@ -442,7 +459,7 @@ export const getStaticProps: GetStaticProps = async ({ params: { slug } }) => {
       publishedDate,
       lastEditedAt,
       slug,
-      profilePicture,
+      // profilePicture,
       coverImage,
       summary,
       moreArticles,

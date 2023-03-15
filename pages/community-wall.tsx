@@ -33,20 +33,22 @@ export default function CommunityWall({ session, supabase, messages }) {
         Thank you for visiting my site! If you feel so inclined, leave me a
         comment, note or suggestion below! I'd love to hear from you!
       </p>
-      <CommunityForm
-        loggedIn={loggedIn}
-        supabase={supabase}
-        session={session}
-      />
+      {/*修改：删除讨论功能2*/}
+      {/*<CommunityForm*/}
+      {/*  loggedIn={loggedIn}*/}
+      {/*  supabase={supabase}*/}
+      {/*  session={session}*/}
+      {/*/>*/}
       <div className="flex justify-center">
         <Ad />
       </div>
       <div className="mt-12">
-        {entries.messages?.map((message) => (
-          <div className="mt-8" key={message.id}>
-            <CommunityEntry message={message} session={session} />
-          </div>
-        ))}
+        {/*修改：删除讨论功能*/}
+        {/*{entries.messages?.map((message) => (*/}
+        {/*  <div className="mt-8" key={message.id}>*/}
+        {/*    <CommunityEntry message={message} session={session} />*/}
+        {/*  </div>*/}
+        {/*))}*/}
       </div>
     </Container>
   );

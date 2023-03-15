@@ -14,10 +14,11 @@ import { fetcher } from '@/lib/fetcher';
 import useSWR from 'swr';
 
 export default function Stats() {
-  const { data: totalReactions } = useSWR<any>(
-    '/api/statistics/total-reactions',
-    fetcher
-  );
+  // 修改：全部删除
+  // const { data: totalReactions } = useSWR<any>(
+  //   '/api/statistics/total-reactions',
+  //   fetcher
+  // );
 
   return (
     <Container title="Stats - Braydon Coyer">
@@ -38,12 +39,14 @@ export default function Stats() {
             </span>
           </h2>
         </div>
-        <Visitors />
+        {/* 修改：统计页面的三部分 */}
+        {/* <Visitors />
         <Pageviews />
-        <NewsletterSubs />
+        <NewsletterSubs /> */}
       </div>
       <div className="flex items-center justify-center my-8">
-        <Ad />
+        {/* 修改：广告 */}
+        {/* <Ad /> */}
       </div>
       <div className="grid grid-cols-4 gap-2 md:gap-6">
         <div className="col-span-4">
@@ -54,13 +57,14 @@ export default function Stats() {
             </span>
           </h2>
         </div>
-        <TotalArticles />
+        {/* 修改：全部删除 */}
+        {/* <TotalArticles />
         <SponsoredArticles />
         <LikeCount likeCount={totalReactions?.likeCount} />
         <LoveCount loveCount={totalReactions?.loveCount} />
         <ClapCount clapCount={totalReactions?.clapCount} />
         <PartyCount partyCount={totalReactions?.partyCount} />
-        <TotalReactions />
+        <TotalReactions /> */}
       </div>
     </Container>
   );

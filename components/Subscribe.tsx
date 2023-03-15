@@ -12,8 +12,9 @@ function SubscribeCard({
   handleSubscribe,
   form,
   inputRef,
-  subscriberCount,
-  issuesCount
+  // 修改删除这俩
+  // subscriberCount,
+  // issuesCount
 }) {
   return (
     <div>
@@ -59,12 +60,18 @@ function SubscribeCard({
               <SuccessMessage>{form.message}</SuccessMessage>
             ) : (
               <p className="mt-6 mb-0 text-sm">
-                {`${
-                  subscriberCount > 0 ? subscriberCount.toLocaleString() : '-'
-                } subscribers – `}
-                <a href={siteMetadata.newsletter}>{`${
-                  issuesCount > 0 ? issuesCount.toLocaleString() : '-'
-                } issues`}</a>
+                {/*修改：删除issues及subsribes*/}
+
+
+                {/*{`${*/}
+                {/*  subscriberCount > 0 ? subscriberCount.toLocaleString() : '-'*/}
+                {/*} subscribers – `}*/}
+                {/*<a href={siteMetadata.newsletter}>{`${*/}
+                {/*  issuesCount > 0 ? issuesCount.toLocaleString() : '-'*/}
+                {/*} issues`}</a>*/}
+
+
+                {`- subscriber me！- issues -`}
               </p>
             )}
           </div>
@@ -119,10 +126,11 @@ type Props = {
 
 export function Subscribe({ size }: Props) {
   const { form, subscribe, inputEl } = useSubscribeToNewsletter();
-  const { data: subData } = useSWR<Subscribers>('/api/subscribers', fetcher);
-  const { data: issueData } = useSWR<Subscribers>('/api/issues', fetcher);
-  const subscriberCount = new Number(subData?.count);
-  const issuesCount = new Number(issueData?.count);
+  //修改：删除这俩功能
+  // const { data: subData } = useSWR<Subscribers>('/api/subscribers', fetcher);
+  // const { data: issueData } = useSWR<Subscribers>('/api/issues', fetcher);
+  // const subscriberCount = new Number(subData?.count);
+  // const issuesCount = new Number(issueData?.count);
 
   if (size === SubscribeSize.SMALL) {
     return (
@@ -133,14 +141,21 @@ export function Subscribe({ size }: Props) {
       />
     );
   }
-
+  // 修改：删除这俩
   return (
     <SubscribeCard
       handleSubscribe={subscribe}
       form={form}
       inputRef={inputEl}
-      subscriberCount={subscriberCount}
-      issuesCount={issuesCount}
     />
   );
+  // return (
+  //   <SubscribeCard
+  //     handleSubscribe={subscribe}
+  //     form={form}
+  //     inputRef={inputEl}
+  //     subscriberCount={subscriberCount}
+  //     issuesCount={issuesCount}
+  //   />
+  // );
 }

@@ -30,7 +30,7 @@ export const getToolboxData = async (databaseId) => {
       });
     }
   });
-z
+
   return results;
 };
 
@@ -82,8 +82,6 @@ export const getListOfTalksData = async (databaseId) => {
       url: item.properties.URL?.url
     });
   });
-  console.log('==============================')
-  console.log(results)
   return results;
 };
 
