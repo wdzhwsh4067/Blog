@@ -49,11 +49,13 @@ export default function Projects() {
           <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-indigo-300 dark:via-indigo-600 to-transparent"></div>
           <div className="grid grid-cols-1 min-h-[500px] md:grid-cols-2">
             <div className="self-end col-span-1 m-8 text-center md:text-left">
-              <h2 className="mt-0">CSS Art Challenge</h2>
+              <h2 className="mt-0">Modular Three-in-one Car Design</h2>
               <p>
-                I created CSS Art Challenge to help people discover that CSS can
-                be fun and more than just creating basic layouts by competing in
-                monthly challenges and winning prizes!
+                Automobiles adopt a modular design concept, with the vehicle 
+                divided into two parts: the seat and the carriage. The two parts 
+                can be connected through interfaces. The car seat is divided into 
+                three parts: a detachable chassis, a flying car seat, and a waterborne 
+                car seat. Different carriages can be replaced to meet different needs.
               </p>
               <ButtonLink
                 text="Visit CSS Art Challenge"
@@ -99,11 +101,14 @@ export default function Projects() {
               />
             </div>
             <div className="self-end order-first col-span-1 m-8 text-center md:order-last md:text-right">
-              <h2 className="mt-0">Pomegradient</h2>
+              <h2 className="mt-0">Wheel Hub Motor Design</h2>
               <p>
-                Pomegradient is a web-based gradient solutiuon currently in beta
-                that allows you to find, save and craft gradients with a
-                creative community!
+                The land car seat is the foundation of Mercedes on land 
+                and achieves automatic driving through a series of sensors. 
+                It is powered purely by electricity, with four wheels independently 
+                driven by hub motors, eliminating the traditional car's series of 
+                driving and transmission devices, reducing the weight of the car, 
+                and saving resources.
               </p>
               <ButtonLink
                 text="Visit Pomegradient"
@@ -120,12 +125,14 @@ export default function Projects() {
           <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-blue-300 dark:via-blue-600 to-transparent"></div>
           <div className="grid grid-cols-1 min-h-[500px] md:grid-cols-2">
             <div className="self-end col-span-1 m-8 text-center md:text-left">
-              <h2 className="mt-0">Bundle, LLC</h2>
+              <h2 className="mt-0">Electric Vehicle Chassis Design</h2>
               <p>
-                A startup consultant company desired to reach potential clients
-                organically through a blog. Working closely with them to
-                understand the requirements, I created an industry website
-                showcasing their products, and a blog focussed on SEO.
+                The land car seat is the foundation of Mercedes on land 
+                and achieves automatic driving through a series of sensors. 
+                It is powered purely by electricity, with four wheels independently 
+                driven by hub motors, eliminating the traditional car's series of 
+                driving and transmission devices, reducing the weight of the car, 
+                and saving resources.
               </p>
               <ButtonLink
                 text="Visit Bundle"
