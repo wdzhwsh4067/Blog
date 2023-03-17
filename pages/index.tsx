@@ -1,6 +1,5 @@
 import { ButtonType, SubscribeSize } from '@/lib/types';
 import { convertToArticleList, getPublishedArticles } from '@/lib/notion';
-
 import { ArticleList } from '@/components/ArticleList';
 import { Button } from '@/components/Button';
 import { Container } from 'layouts/Container';
@@ -20,8 +19,8 @@ export default function Home({ recentArticles }) {
           <div className="grid items-center grid-cols-1 mt-12 text-center md:mt-24 md:text-left md:grid-cols-6">
             <h1 className="order-2 col-span-5 text-4xl leading-tight md:leading-normal md:order-1 sm:text-5xl">
               I'm{' '}
-              <span className="text-teal-500 dark:text-teal-400">Dana Wang</span>.
-              I'm a developer, blogger and master student studying at Xinjiang University.
+              <span className="text-teal-500 dark:text-teal-400">Dana Wang</span>, 
+              a beginner programmer and master student studying at Xinjiang University.
             </h1>
             <div className="order-1 md:order-2">
               <Image

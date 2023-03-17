@@ -41,7 +41,7 @@ function SubscribeCard({
                 ref={inputRef}
                 id="email-address"
                 name="email-address"
-                placeholder="bobloblaw@gmail.com"
+                placeholder="danawang@datalab.icu"
                 type="email"
                 autoComplete="email"
                 required
@@ -98,7 +98,7 @@ function InlineSubscribe({ handleSubscribe, form, inputRef }) {
           ref={inputRef}
           id="email-address"
           name="email-address"
-          placeholder="bobloblaw@gmail.com"
+          placeholder="danawang@datalab.icu"
           type="email"
           autoComplete="email"
           required

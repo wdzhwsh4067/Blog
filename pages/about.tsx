@@ -30,7 +30,7 @@ export default function About({ recentArticles, workTimeline }) {
         </span>
       </h1>
       <p>
-        I’m Braydon, a developer,{' '}
+        I’m Dana, a developer,{' '}
         <CustomLink href={siteMetadata.codepen}>creative coder</CustomLink>,{' '}
         <CustomLink href={`${siteMetadata.siteUrl}/blog`}>blogger</CustomLink>{' '}
         and self-proclaimed designer who specializes in front-end development.
@@ -44,12 +44,14 @@ export default function About({ recentArticles, workTimeline }) {
         functionality with intuitive design to enhance enterprise GRC programs.
       </p>
       <div>
-        <div className="hidden md:block md:float-left">
+        {/* 修改：原代码 */}
+        {/* <div className="hidden md:block md:float-left "> */}
+        <div className="md:block md:float-left flex justify-center">
           <Image
-            className="md:mr-8"
-            src="https://s2.loli.net/2023/03/16/apJv2yNUiHYZ91x.png"
+            className="md:mr-103"
+            src="https://pic.imgdb.cn/item/6412d047ebf10e5d53bcfd8f.png"
             placeholder="blur"
-            blurDataURL="https://s2.loli.net/2023/03/16/apJv2yNUiHYZ91x.png"
+            blurDataURL="https://pic.imgdb.cn/item/6412d047ebf10e5d53bcfd8f.png"
             width={340}
             height={448}
             alt={'article cover'}

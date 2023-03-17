@@ -63,9 +63,9 @@ export default function Projects() {
             <div className="md:absolute md:top-4 md:right-[-200px] md:w-[800px]">
               <Image
                 objectFit="fill"
-                src="https://res.cloudinary.com/braydoncoyer/image/upload/v1646346494/mbpro_css_art_challenge_thh7yw.png"
+                src="https://pic.imgdb.cn/item/6412cad5ebf10e5d53ae1e6a.png"
                 placeholder="blur"
-                blurDataURL="https://res.cloudinary.com/braydoncoyer/image/upload/v1646346494/mbpro_css_art_challenge_thh7yw.png"
+                blurDataURL="https://pic.imgdb.cn/item/6412cad5ebf10e5d53ae1e6a.png"
                 width={900}
                 height={552}
                 layout="intrinsic"
@@ -78,27 +78,27 @@ export default function Projects() {
         <br />
         <br />
 
-        <div className="flex justify-center">
+        {/* <div className="flex justify-center">
           <Ad />
-        </div>
+        </div> */}
 
         <div className="relative w-full overflow-hidden border rounded-3xl bg-gradient-to-b from-purple-50 dark:from-purple-900/50 dark:to-fuchsia-700 to-fuchsia-300 dark:border-slate-700 border-slate-100">
           <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-fuchsia-300 dark:via-fuchsia-600 to-transparent"></div>
-          <div className="grid grid-cols-1 min-h-[500px] max-h-[500px] md:grid-cols-2">
-            <div className="md:w-[650px] max-h-[500px]">
+          <div className="grid grid-cols-1 min-h-[400px] max-h-[500px] md:grid-cols-2">
+            <div className="md:w-[550px] max-h-[500px]">
               <Image
-                className="absolute bottom-20 md:bottom-0 md:-left-16"
+                className="absolute bottom-20 md:bottom-0 md:-left-0"
                 objectFit="fill"
-                src="https://res.cloudinary.com/braydoncoyer/image/upload/v1638225420/pomegradient_ipadpro_vhapql.png"
+                src="https://pic.imgdb.cn/item/6412d8edebf10e5d53dd5acd.png"
                 placeholder="blur"
-                blurDataURL="https://res.cloudinary.com/braydoncoyer/image/upload/v1638225420/pomegradient_ipadpro_vhapql.png"
+                blurDataURL="https://pic.imgdb.cn/item/6412d8edebf10e5d53dd5acd.png"
                 width={1978}
-                height={1713}
+                height={1513}
                 layout="intrinsic"
                 alt={'NgLimeade on an iPad'}
               />
             </div>
-            <div className="self-end order-first col-span-1 m-8 text-center md:order-last md:text-left">
+            <div className="self-end order-first col-span-1 m-8 text-center md:order-last md:text-right">
               <h2 className="mt-0">Pomegradient</h2>
               <p>
                 Pomegradient is a web-based gradient solutiuon currently in beta
@@ -132,12 +132,12 @@ export default function Projects() {
                 href="https://www.bundleapps.io"
               />
             </div>
-            <div className="md:absolute md:top-4 md:right-[-200px] md:w-[800px]">
+            <div className="md:absolute md:top-4 md:right-[-150px] md:w-[800px]">
               <Image
                 objectFit="fill"
-                src="https://res.cloudinary.com/braydoncoyer/image/upload/v1638221102/mbpro_bundle_site_zg8jbe.png"
+                src="https://pic.imgdb.cn/item/6412d2d2ebf10e5d53c376bb.png"
                 placeholder="blur"
-                blurDataURL="https://res.cloudinary.com/braydoncoyer/image/upload/v1638221102/mbpro_bundle_site_zg8jbe.png"
+                blurDataURL="https://pic.imgdb.cn/item/6412d2d2ebf10e5d53c376bb.png"
                 width={900}
                 height={552}
                 layout="intrinsic"
@@ -146,6 +146,7 @@ export default function Projects() {
             </div>
           </div>
         </div>
+
       </div>
     </Container>
   );

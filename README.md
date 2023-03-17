@@ -40,9 +40,17 @@ Duplicate [the following Notion database](https://www.notion.so/0d3e00c6bbe54231
 
 ## Docker run
 
-
 跳过jutpter的环境变量？
 ①创建镜像：
 docker build -f ./Dockerfile -t myblog .
 ②启动容器：
 docker run -itd -p 9526:9526 --name myblog myblog
+
+## Linux nohup run
+export PORT=9526
+nohup npm run start > runbuild0316.log 2>&1 &
+## while insatll how to install  sharp
+export PUPPETEER_SKIP_DOWNLOAD=true
+a1234@Olas-MacBook-Pro braydoncoyer.dev-3 % export npm_config_sharp_binary_host="https://npmmirror.com/mirrors/sharp" \
+  export npm_config_sharp_libvips_binary_host="https://npmmirror.com/mirrors/sharp-libvips" \
+  npm install sharp

@@ -379,8 +379,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
       });
     }
   });
-  console.log('=================================');
-  console.log(paths);
+  // console.log('=================================');
+  // console.log(paths);
 
   return {
     paths,
